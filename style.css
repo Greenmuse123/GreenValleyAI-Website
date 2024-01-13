@@ -68,7 +68,12 @@ body {
     height: 100vh; /* Set the height to viewport height */
     background-attachment: fixed; /* Optional: for a parallax effect */
 }
-
+@media screen and (max-width: 768px) {
+    .hero {
+        background-size: contain;
+        background-position: top center;
+    }
+}
 
 .hero-text h1 {
     font-size: 2.5em;
