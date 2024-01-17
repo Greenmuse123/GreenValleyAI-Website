@@ -54,26 +54,21 @@ body {
     }
 
         .nav-links a:hover {
-            background-color: #004225; /* Dark green background on hover */
+            background-color: rgba(0, 51, 34, 0.7); /* Dark green background on hover */
             color: rgba(0, 0, 0, 0.7); /* White text color on hover */
             border-radius: 12px; /* Optional: rounded corners for the hover background */
         }
 
 /* Hero Section Styles */
 .hero {
-    background: url('hero-home.png') center/cover no-repeat;
+    background: url('hero-home.jpg') center/cover no-repeat;
     color: #ffffff;
     text-align: center;
     padding: 100px 0;
     height: 100vh; /* Set the height to viewport height */
     background-attachment: fixed; /* Optional: for a parallax effect */
 }
-@media screen and (max-width: 768px) {
-    .hero {
-        background-size: contain;
-        background-position: top center;
-    }
-}
+
 
 .hero-text h1 {
     font-size: 2.5em;
@@ -623,15 +618,54 @@ body {
 .source-icon {
     margin-bottom: -5px;
 }
+.hamburger-icon{
+    display: none;
+    cursor: pointer;
+}
+.hamburger-icon span {
+    display: block;
+    width: 25px; /* Adjust size as needed */
+    height: 3px; /* Adjust thickness as needed */
+    background-color: #333; /* Adjust color as needed */
+    margin: 5px 0; /* Adjust spacing as needed */
+}
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
     .navbar {
+        display: flex;
+        justify-content: space-between; /* Adjust to space-between */
+        align-items: center;
+        flex-direction: row; /* Change to row for horizontal alignment */
+    }
+
+    .nav-links {
+        display: none; /* Hide the links initially */
         flex-direction: column;
+        position: absolute; /* Position the links absolutely */
+        right: 10px; /* Position to the right of the hamburger icon */
+        top: 50px; /* Position below the navbar */
+        background-color: rgba(0, 51, 34, 0.7); /* Add a background color */
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    /* Adjustments for Logo and Navigation Links */
+    .logo img {
+        height: 4vh; /* Adjust logo size for mobile */
     }
 
     .nav-links li {
-        margin-bottom: 10px;
+        margin: 6px 0;
     }
+
 
     .portfolio-items {
         flex-wrap: nowrap;
