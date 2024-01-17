@@ -132,5 +132,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 });
+document.querySelector('.hamburger-icon').addEventListener('click', function() {
+    document.querySelector('.navbar .nav-links').classList.toggle('active');
+});
 
 
