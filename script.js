@@ -136,4 +136,66 @@ document.querySelector('.hamburger-icon').addEventListener('click', function() {
     document.querySelector('.navbar .nav-links').classList.toggle('active');
 });
 
+// Existing JavaScript code for form submission
+document.addEventListener("DOMContentLoaded", function () {
+    var contactForm = document.querySelector("#contactForm");
+    var contactPopup = document.querySelector("#contactPopup");
+
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var formData = new FormData(contactForm);
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://formspree.io/f/xoqgvoge", true);
+        xhr.setRequestHeader("Accept", "application/json");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                contactPopup.style.display = "none"; // Close the popup
+                displayCenteredMessage("Thank you! Your message has been sent.");
+            } else {
+                displayCenteredMessage("Oops! Something went wrong.", true);
+            }
+        };
+
+        xhr.send(formData);
+    });
+
+    function displayCenteredMessage(message, isError) {
+        var messageDiv = document.createElement("div");
+        messageDiv.innerText = message;
+        messageDiv.id = "centeredMessage";
+        messageDiv.className = isError ? "error" : "success";
+        document.body.appendChild(messageDiv);
+
+        setTimeout(function () {
+            messageDiv.style.opacity = "0";
+            setTimeout(function () {
+                messageDiv.remove();
+            }, 2000); // Remove message after fade-out
+        }, 3000); // Message stays for 3 seconds
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var servicesSection = document.querySelector("#services");
+
+    function checkVisibility() {
+        var windowHeight = window.innerHeight;
+        var sectionTop = servicesSection.getBoundingClientRect().top;
+        var sectionVisible = sectionTop < windowHeight - 30; // Adjust as needed
+
+        if (sectionVisible) {
+            servicesSection.classList.add("visible");
+        }
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility(); // Initial check on page load
+});
+
+
+
+
+
 
