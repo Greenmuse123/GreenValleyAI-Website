@@ -1,0 +1,45 @@
+/*******************************************************/
+/**************** ## Client Logo Area ******************/
+/*******************************************************/ 
+.client-logo-wrap
+    +gapLR(margin, -30px)
+    +flexcenter(space-between)
+    +res-bl(xl)
+        flex-wrap: wrap
+        justify-content: center
+    .client-logo-item
+        max-width: 40%
+        margin: 0 30px 30px
+        filter: grayscale(1) opacity(0.2)
+        &:hover
+            filter: grayscale(0) opacity(1)
+        
+.client-text
+    +res-ab(ms)
+        font-size: 18px
+        
+.client-logo-wrap-two
+    display: flex
+    flex-wrap: wrap
+    +gapLR(margin, -15px)
+    .client-logo-item
+        padding: 30px
+        margin-bottom: 30px
+        +flexcenter(center)
+        background: #0A1019
+        +gapLR(margin, 15px)
+        width: calc(20% - 30px)
+        border: 1px solid $color-border
+        +res-bl(xl)
+            width: calc(25% - 30px)
+        +res-bl(lg)
+            width: calc(33.333% - 30px)
+        +res-bl(sm)
+            width: calc(50% - 30px)
+        img
+            transition: 0.5s
+            filter: brightness(0) invert(1)
+        &:hover
+            background: $color-primary
+            img
+                filter: brightness(1) invert(0)

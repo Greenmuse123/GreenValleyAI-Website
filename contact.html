@@ -1,46 +1,370 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form Popup</title>
-    <link rel="stylesheet" href="contactStyling.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Ygency - Web Agency HTML Template || Contact</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="assets/css/flaticon.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome-5.14.0.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
-    <!-- Popup Form -->
-    <div id="contactPopup" class="contact-popup">
-        <div class="contact-form">
-            <span class="close-btn">&times;</span>
-            <h2>Get in Touch</h2>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name..">
+    <div class="page-wrapper">
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email..">
+        <!-- Preloader -->
+        <div class="preloader"><div class="custom-loader"></div></div>
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+        <!-- main header -->
+        <header class="main-header menu-absolute">
 
-                <label for="inquiry">Inquiry Details</label>
-                <textarea id="inquiry" name="inquiry" placeholder="Write something.."></textarea>
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="container container-1620 clearfix">
 
-                <input type="submit" value="Submit">
-            </form>
+                    <div class="header-inner rpy-10 rel d-flex align-items-center">
+                        <div class="logo-outer">
+                            <div class="logo"><a href="index.html"><img src="assets/images/logos/logo.png" alt="Logo" title="Logo"></a></div>
+                        </div>
+
+                        <div class="nav-outer ms-lg-auto clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-lg">
+                                <div class="navbar-header py-10">
+                                   <div class="mobile-logo">
+                                       <a href="index.html">
+                                            <img src="assets/images/logos/logo.png" alt="Logo" title="Logo">
+                                       </a>
+                                   </div>
+                                   
+                                    <!-- Toggle Button -->
+                                    <button type="button" class="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="navbar-collapse collapse clearfix">
+                                    <ul class="navigation clearfix">
+                                        <li><a href="index.html#home">Home</a></li>
+                                        <li><a href="index.html#about">About Us</a></li>
+                                        <li><a href="index.html#services">Services</a></li>
+                                        <li><a href="index.html#projects">Projects</a></li>
+                                        <li><a href="index.html#team">Team</a></li>
+                                        <li><a href="index.html#pricing">Pricing</a></li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+                            <!-- Main Menu End-->
+                        </div>
+                        
+                        <!-- Nav Search -->
+                        <div class="nav-search py-10">
+                            <button class="far fa-search"></button>
+                            <form action="#" class="hide">
+                                <input type="text" placeholder="Search" class="searchbox" required="">
+                                <button type="submit" class="searchbutton far fa-search"></button>
+                            </form>
+                        </div>
+                        
+                        <!-- Menu Button -->
+                        <div class="menu-btns">
+                            <!-- menu sidbar -->
+                            <div class="menu-sidebar">
+                                <button>
+                                    <img src="assets/images/icons/toggler.svg" alt="Toggler">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+        </header>
+       
+
+        <!--Form Back Drop-->
+        <div class="form-back-drop"></div>
+        
+        <!-- Hidden Sidebar -->
+        <section class="hidden-bar">
+            <div class="inner-box text-center">
+                <div class="cross-icon"><span class="fa fa-times"></span></div>
+                <div class="title">
+                    <h4>Get Appointment</h4>
+                </div>
+
+                <!--Appointment Form-->
+                <div class="appointment-form">
+                    <form method="post" action="contact.html">
+                        <div class="form-group">
+                            <input type="text" name="text" value="" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="theme-btn">Submit now</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!--Social Icons-->
+                <div class="social-style-one">
+                    <a href="https://www.instagram.com/thetipoftech/" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+
+                </div>
+            </div>
+        </section>
+        <!--End Hidden Sidebar -->
+        
+        
+        <!-- Page Banner Start -->
+        <section class="page-banner-area overlay pt-220 rpt-150 pb-170 rpb-100 rel z-1 bgs-cover text-center" style="background-image: url(assets/images/banner/banner-bg.jpg);">
+            <div class="container">
+                <div class="banner-inner rpt-10">
+                    <h2 class="page-title wow fadeInUp delay-0-2s">Contact</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center wow fadeInUp delay-0-4s">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!-- Page Banner End -->
+       
+       
+       <!-- Contact Form Area start -->
+        <section class="contact-page-area py-130 rpy-100 rel z-1">
+            <div class="container">
+               <div class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="our-location-part rmb-55 wow fadeInUp delay-0-2s">
+                            <div class="row">
+                                <div class="col-xl-10">
+                                    <div class="section-title mb-60">
+                                        <span class="sub-title mb-15">Contact Us</span>
+                                        <h2>Ready to Start Your Next Project</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row gap-80 pb-30">
+                               
+                                <div class="col-sm-6">
+                                    <div class="our-location-address mb-40">
+                                       
+                                        <a class="mailto" href="mailto:greenvalleyaisolutions@gmail.com">GreenValleyAISolutions@gmail.com</a><br>
+                                        <a class="callto" href="callto:+17027738839"><i class="fas fa-phone"></i> +1 (702) 7730 8839</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4>Follow Us</h4>
+                            <div class="social-style-two pt-15">
+                                <a href="https://www.instagram.com/thetipoftech/" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="contact-page-form form-style-one wow fadeInUp delay-0-2s">
+                            <div class="section-title mb-35">
+                                <span class="sub-title mb-15">Get Free Quote</span>
+                                <h3>Drop Us a Message</h3>
+                            </div>
+                            <form id="contactForm" class="contactForm"  action="assets/php/form-process.php" name="contactForm" method="post">
+                                <div class="row gap-60 pt-15">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="name"><i class="far fa-user"></i></label>
+                                            <input type="text" id="name" name="name" class="form-control" value="" placeholder="Full Name" required data-error="Please enter your name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="phone_number"><i class="far fa-phone"></i></label>
+                                            <input type="text" id="phone_number" name="phone_number" class="form-control" value="" placeholder="Phone" required data-error="Please enter your Number">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="email"><i class="far fa-envelope"></i></label>
+                                            <input type="email" id="email" name="email" class="form-control" value="" placeholder="Email Address" required data-error="Please enter your Email Address">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="message"><i class="far fa-pencil"></i></label>
+                                            <textarea name="message" id="message" class="form-control" rows="2" placeholder="Message" required data-error="Please enter your Message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group pt-5 mb-0">
+                                            <button type="submit" class="theme-btn style-two w-100">Send Message us <i class="far fa-arrow-right"></i></button>
+                                            <div id="msgSubmit" class="hidden"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Form Area end -->
+       
+       
+       <!-- Location Map Area Start -->
+        <div class="contact-page-map mb-120 rpb-90 wow fadeInUp delay-0-2s">
+            <div class="container-fluid">
+                <div class="our-location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d142190.2862584524!2d-74.01298319978558!3d40.721725351435126!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbd!4v1663473911885!5m2!1sen!2sbd" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </div>
+        <!-- Location Map Area End -->
+        
+       
+        <!-- footer area start -->
+        <footer class="main-footer rel z-1" style="background-image: url(assets/images/footer/footer-bg-shape-two.png)">
+            <div class="container container-1290">
+                <div class="footer-top pt-80 pb-60">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="footer-logo mb-20 wow fadeInRight delay-0-2s">
+                                <a href="index.html"><img src="assets/images/logos/footer-logo.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 text-lg-end">
+                            <div class="social-style-four mb-20 wow fadeInLeft delay-0-2s">
+                                <a href="https://www.instagram.com/thetipoftech/" target="_blank"><i class="fab fa-instagram"></i> <span>Instagram</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="footer-left-content pt-80">
+                            <div class="lets-work mb-50 wow fadeInUp delay-0-2s">
+                                <img src="assets/images/footer/lets-work.png" alt="Let's Work Man">
+                                <span>Let’s Work Together</span>
+                            </div>
+                            <div class="footer-contact-info wow fadeInUp delay-0-3s">
+                                <a class="theme-btn style-three" href="mailto:greenvalleyaisolutions@gmail.com">GreenValleyAISolutions@gmail.com <i class="far fa-arrow-right"></i></a>
+                                <a class="theme-btn style-three phone-number" href="callto:+1(702)7738839">+1 (702) 773 8839 <i class="far fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-right-content">
+                            <h4 class="footer-title wow fadeInUp delay-0-2s">Quick Links</h4>
+                            <div class="footer-widget widget_nav_menu">
+                                <ul class="list-style-two wow fadeInUp delay-0-3s">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="services.html">Popular Services</a></li>
+                                    <li><a href="index.html#pricing">Pricing</a></li>
+
+                                </ul>
+                                <ul class="list-style-two wow fadeInUp delay-0-4s">
+                                    <li><a href="faqs.html">Faqs ?</a></li>
+                                    <li><a href="index.html#team">Team Member</a></li>
+                                    
+                               
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row align-items-center">
+                        <div class="col-xl-8 col-lg-6">
+                            <div class="footer-bottom-menu pt-40 pb-35 rpb-0 wow fadeInRight delay-0-2s">
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="faqs.html">Faqs</a></li>
+                                    <li><a href="services.html">How IT Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6">
+                            <div class="copyright-text text-lg-end pt-40 pb-35 rpt-10 wow fadeInLeft delay-0-2s">
+                                <p>Copyright @2023, <a href="index.html">GreenValleyAISolutions</a> All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer area end -->
+        
+        
+        <!-- Scroll Top Button -->
+        <button class="scroll-top scroll-to-target" data-target="html"><span class="fas fa-angle-double-up"></span></button>
+
     </div>
+    <!--End pagewrapper-->
+   
+    
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Appear Js -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- Slick -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Nice Select -->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!-- Image Loader -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="assets/js/circle-progress.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--  WOW Animation -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.js"></script>
+    
+    <!-- For Contact Form -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
 
-    <script>
-        // Script to handle the popup
-        document.addEventListener('DOMContentLoaded', function() {
-            var closeBtn = document.querySelector('.close-btn');
-            var contactPopup = document.getElementById('contactPopup');
-
-            // Close Popup
-            closeBtn.onclick = function() {
-                contactPopup.style.display = 'none';
-            };
-        });
-    </script>
 </body>
 </html>
